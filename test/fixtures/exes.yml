@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  note_sex: 1
+  note_gentilesse: 1
+  note_humour: 1
+  numero: 1
+  point_positif: MyText
+  point_negatif: MyText
+  description: MyText
+
+two:
+  name: MyString
+  note_sex: 1
+  note_gentilesse: 1
+  note_humour: 1
+  numero: 1
+  point_positif: MyText
+  point_negatif: MyText
+  description: MyText

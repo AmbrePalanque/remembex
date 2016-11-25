@@ -1,0 +1,57 @@
+<%= form_for(ex) do |f| %>
+  <% if ex.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(ex.errors.count, "error") %> prohibited this ex from being saved:</h2>
+
+      <ul>
+      <% ex.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :note_sex %>
+    <%= f.number_field :note_sex %>
+  </div>
+
+  <div class="field">
+    <%= f.label :note_gentilesse %>
+    <%= f.number_field :note_gentilesse %>
+  </div>
+
+  <div class="field">
+    <%= f.label :note_humour %>
+    <%= f.number_field :note_humour %>
+  </div>
+
+  <div class="field">
+    <%= f.label :numero %>
+    <%= f.number_field :numero %>
+  </div>
+
+  <div class="field">
+    <%= f.label :point_positif %>
+    <%= f.text_area :point_positif %>
+  </div>
+
+  <div class="field">
+    <%= f.label :point_negatif %>
+    <%= f.text_area :point_negatif %>
+  </div>
+
+  <div class="field">
+    <%= f.label :description %>
+    <%= f.text_area :description %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

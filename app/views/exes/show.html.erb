@@ -1,0 +1,48 @@
+<p id="notice"><%= notice %></p>
+<div class="all_all">
+  <div class="all">
+      <h1 class ="show">
+          <%= @ex.name %>
+      </h1>
+
+      <p>
+        <strong>Sexe</strong>
+        <%= @ex.note_sex %>
+      </p>
+
+      <p>
+        <strong >Gentilesse</strong>
+        <%= @ex.note_gentilesse %>
+      </p>
+
+      <p>
+        <strong>Humour</strong>
+        <%= @ex.note_humour %>
+      </p>
+
+      <p>
+        <strong>Numéro</strong>
+        <%= @ex.numero %>
+      </p>
+
+      <p>
+        <strong>Point positif</strong>
+        <%= @ex.point_positif %>
+      </p>
+
+      <p>
+        <strong>Point negatif</strong>
+        <%= @ex.point_negatif %>
+      </p>
+
+      <p>
+        <strong>Description</strong>
+        <%= @ex.description %>
+      </p>
+  </div>
+</div>
+
+<div class="bouton">
+  <%= link_to 'Edit', edit_ex_path(@ex), class: "btn first"%>
+  <%= link_to 'Back', exes_path, class: "btn first"%>
+</div>
