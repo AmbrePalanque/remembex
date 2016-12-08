@@ -1,44 +1,20 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Mes Ex</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Image</th>
-      <th>Name</th>
-      <th>Note sex</th>
-      <th>Note gentilesse</th>
-      <th>Note humour</th>
-      <th>Numero</th>
-      <th>Point positif</th>
-      <th>Point negatif</th>
-      <th>Description</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @exes.each do |ex| %>
-      <tr>
-        <td><%= image_tag ex.image.url(:thumb) %></td>
-        <td><%= ex.name %></td>
-        <td><%= ex.note_sex %></td>
-        <td><%= ex.note_gentilesse %></td>
-        <td><%= ex.note_humour %></td>
-        <td><%= ex.numero %></td>
-        <td><%= ex.point_positif %></td>
-        <td><%= ex.point_negatif %></td>
-        <td><%= ex.description %></td>
-        <td><%= link_to 'Show', ex %></td>
-        <td><%= link_to 'Edit', edit_ex_path(ex) %></td>
-        <td><%= link_to 'Destroy', ex, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
+<div class="container exes">
+  <% @exes.each do |ex|%>
+    <%=link_to edit_ex_path(ex), class: 'col-sm-3' do %> <!--  link-to = a href pour le scss/css/html/etc!-->
+      <div>
+        <div class="overlay">
+          <div>
+            <span class="name"> <%=ex.name%> </span>
+            <span class="note"> <%=ex.note%> </span>
+          </div>
+        </div>
+        <%=image_tag ex.image.url(:medium)%>
+      </div>
+    <%end%>
+  <%end%>
+</div>
 <%= link_to 'New Ex', new_ex_path %>
 <%= link_to 'back', root_path %>

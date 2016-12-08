@@ -5,7 +5,7 @@ class ExesController < ApplicationController
   # GET /exes
   # GET /exes.json
   def index
-    @exes = current_user.exes
+    @exes = Ex.where(user_id: current_user.id).order(note: :desc)
   end
 
   # GET /exes/1

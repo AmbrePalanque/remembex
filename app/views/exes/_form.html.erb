@@ -10,6 +10,9 @@
       </ul>
     </div>
   <% end %>
+  <% if ex.image? %>
+    <%= image_tag ex.image.url(:medium) %>
+  <% end %>
   <div class="field">
     <%= f.label :image %>
     <%= f.file_field :image %>
@@ -22,17 +25,17 @@
 
   <div class="field">
     <%= f.label :note_sex %>
-    <%= f.number_field :note_sex %>
+    <%= f.number_field :note_sex, min: 0, max: 10%>
   </div>
 
   <div class="field">
     <%= f.label :note_gentilesse %>
-    <%= f.number_field :note_gentilesse %>
+    <%= f.number_field :note_gentilesse, min: 0, max: 10 %>
   </div>
 
   <div class="field">
     <%= f.label :note_humour %>
-    <%= f.number_field :note_humour %>
+    <%= f.number_field :note_humour, min: 0, max: 10 %>
   </div>
 
   <div class="field">

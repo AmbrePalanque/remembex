@@ -1,3 +1,47 @@
-// Place all the styles related to the Exes controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.exes {
+  > a {
+    background: white;
+    color: white;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.2s;
+    &:hover {
+      transform: scale(1.05);
+    }
+    > div {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      .overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(transparentize(red, 1) 25%, transparentize(red, 0.5));
+        display: flex;
+        flex-direction: column-reverse;
+        div {
+          height: 50px;
+          padding: 0 20px;
+          display: flex;
+          align-items: center;
+          span {
+            flex-grow: 0;
+            flex-shrink: 0;
+            font-size: 20px;
+            &.name {
+              flex-grow: 1;
+            }
+          }
+        }
+      }
+      img {
+        width: 100%;
+        display: block;
+      }
+    }
+    &:hover {
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
