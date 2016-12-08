@@ -1,9 +1,11 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Mes Ex</h1>
-<div class="container exes">
+<%= link_to 'New Ex', new_ex_path %>
+<%= link_to 'back', root_path %>
+<div class="exes">
   <% @exes.each do |ex|%>
-    <%=link_to edit_ex_path(ex), class: 'col-sm-3' do %> <!--  link-to = a href pour le scss/css/html/etc!-->
+    <%=link_to ex_path(ex) do %> <!--  link-to = a href pour le scss/css/html/etc!-->
       <div>
         <div class="overlay">
           <div>
@@ -16,5 +18,3 @@
     <%end%>
   <%end%>
 </div>
-<%= link_to 'New Ex', new_ex_path %>
-<%= link_to 'back', root_path %>
