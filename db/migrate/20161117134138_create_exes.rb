@@ -10,6 +10,7 @@ class CreateExes < ActiveRecord::Migration[5.0]
       t.text :point_negatif
       t.text :description
       t.references :user
+      t.integer :user_id
 
       t.timestamps
     end
