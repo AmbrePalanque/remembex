@@ -9,6 +9,16 @@
   </head>
 
   <body>
+    <header>
+      <nav>
+        <% if current_user %>
+          <%= link_to "Log out", "/logout" %>
+        <% else %>
+          <%= link_to "Sign up", "/signup" %>
+          <%= link_to "Log in", "/login" %>
+        <% end %>
+      </nav>
+    </header>
     <%= yield %>
   </body>
 </html>

@@ -4,7 +4,9 @@
       <h1 class ="show">
           <%= @ex.name %>
       </h1>
-
+      <p>
+        <%= image_tag @ex.image.url(:medium) %>
+      </p>
       <p>
         <strong>Sexe</strong>
         <%= @ex.note_sex %>

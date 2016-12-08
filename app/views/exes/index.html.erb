@@ -5,6 +5,7 @@
 <table>
   <thead>
     <tr>
+      <th>Image</th>
       <th>Name</th>
       <th>Note sex</th>
       <th>Note gentilesse</th>
@@ -20,6 +21,7 @@
   <tbody>
     <% @exes.each do |ex| %>
       <tr>
+        <td><%= image_tag ex.image.url(:thumb) %></td>
         <td><%= ex.name %></td>
         <td><%= ex.note_sex %></td>
         <td><%= ex.note_gentilesse %></td>
@@ -39,3 +41,4 @@
 <br>
 
 <%= link_to 'New Ex', new_ex_path %>
+<%= link_to 'back', root_path %>

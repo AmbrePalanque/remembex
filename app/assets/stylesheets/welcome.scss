@@ -2,24 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.all_all {
-	text-align: center;
-}
-
-.all {
-	margin-top: 10em;
-	width: 30%;
-}
-
-.show {
-	color: white;
-	font-family:  Rampung;
-}
-
-.all p{
-		color: white;
-}
-
 strong {
 			font-weight: normal;
 
@@ -69,8 +51,8 @@ a.btn {
 	width: 12%;
   box-sizing: border-box;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   background-color: transparent;
   border: 2px solid #fff;
   border-radius: 0.6em;
@@ -78,8 +60,8 @@ a.btn {
   cursor: pointer;
   display: inline-block;
   -webkit-align-self: center;
-      -ms-flex-item-align: center;
-          align-self: center;
+	-ms-flex-item-align: center;
+  align-self: center;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1;

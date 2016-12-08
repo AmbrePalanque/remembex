@@ -9,6 +9,7 @@ class CreateExes < ActiveRecord::Migration[5.0]
       t.text :point_positif
       t.text :point_negatif
       t.text :description
+      t.references :user
 
       t.timestamps
     end
