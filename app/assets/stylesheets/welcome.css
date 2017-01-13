@@ -1,14 +1,6 @@
 /* Place all the styles related to the welcome controller here.
 They will automatically be included in application.css.
 You can use Sass (SCSS) here: http://sass-lang.com/ */
-@font-face {
-    font-family: 'edo_szregular';
-    src: url('fonts/edosz.ttf') format('ttf'),
-         url('fonts/edosz.ttf') format('ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-
 
 body {
 	background: red;
