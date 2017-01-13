@@ -1,0 +1,31 @@
+/* Place all the styles related to the welcome controller here.
+They will automatically be included in application.css.
+You can use Sass (SCSS) here: http://sass-lang.com/ */
+
+body {
+	background: red;
+	font-family: Roboto;
+}
+
+
+.bienvenue {
+	color: white;
+	width: 650px;
+	height: 250px;
+	left: 50%;
+	top : 50%;
+	position: absolute;
+	margin: -125px 0 0 -325px;
+}
+
+.bienvenue .welcome2 {
+	font-size: 60px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.bienvenue .welcome1 {
+	font-size: 150px;
+	font-family: Edo SZ;
+	margin-top: -35px;
+}

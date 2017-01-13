@@ -13,3 +13,18 @@
  *= require_tree .
  *= require_self
  */
+
+ /*Design sign up login logout*/
+.connexion {
+  > a{
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+  }
+}
+/*Design Sign Up*/
+.signup {
+  width: 75%;
+  height: 75%;
+  border: solid;
+}
