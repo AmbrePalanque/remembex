@@ -3,8 +3,8 @@ They will automatically be included in application.css.
 You can use Sass (SCSS) here: http://sass-lang.com/ */
 @font-face {
     font-family: 'edo_szregular';
-    src: asset-url('fonts/edosz.ttf') format('ttf'),
-         asset-url('fonts/edosz.ttf') format('ttf');
+    src: url('fonts/edosz.ttf') format('ttf'),
+         url('fonts/edosz.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
 }
@@ -12,7 +12,7 @@ You can use Sass (SCSS) here: http://sass-lang.com/ */
 
 body {
 	background: red;
-	font-family: Edo SZ;
+	font-family:Roboto;
 }
 
 
