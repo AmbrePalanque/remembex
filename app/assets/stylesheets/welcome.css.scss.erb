@@ -1,0 +1,136 @@
+/* Place all the styles related to the welcome controller here.
+They will automatically be included in application.css.
+You can use Sass (SCSS) here: http://sass-lang.com/ */
+@font-face {
+    font-family: 'edo_szregular';
+    src: font-url('/assets/edosz.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'gloss_and_bloomregular';
+    src: url('../images/fonts/gloss_and_bloom-webfont.woff2') format('woff2'),
+         url('../images/fonts/gloss_and_bloom-webfont.woff') format('woff'),
+         url('../images/fonts/gloss_and_bloom-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+  background: #f5ecec;
+  font-family:Roboto;
+}
+
+.mouseZone {
+  z-index: 1000;
+  position: relative;
+}
+
+.mouseZone div {
+  height: 50vh;
+}
+
+.fond {
+  position: relative;
+  max-height: 98vh;
+  height: 98vh;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.photo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+
+  transition: 1s ;
+  transform: translateX(0) translateY(0) translateZ(0);
+  -webkit-transform: translateX(0) translateY(0) translateZ(0);
+  -moz-transform: translateX(0) translateY(0) translateZ(0);
+  -o-transform: translateX(0) translateY(0) translateZ(0);
+  -ms-transform: translateX(0) translateY(0) translateZ(0);
+}
+
+.photo.decal {
+  transform: translateX(0) translateY(20px) translateZ(0);
+  -webkit-transform: translateX(0) translateY(20px) translateZ(0);
+  -moz-transform: translateX(0) translateY(20px) translateZ(0);
+  -o-transform: translateX(0) translateY(20px) translateZ(0);
+  -ms-transform: translateX(0) translateY(20px) translateZ(0);
+}
+
+
+
+
+/*.photo:hover {
+  transition: 0.5s ease;
+  transform: translate(3px, 3px);
+  -webkit-transform: translate(3px, 3px);
+  -moz-transform: translate(3px, 3px);
+  -o-transform: translate(3px, 3px);
+  -ms-transform: translate(3px, 3px);
+}*/
+
+.welcome1 span  {
+  color: #c50000
+}
+.bienvenue {
+	color: white;
+	width: 850px;
+	height: 250px;
+	left: 50%;
+	top : 50%;
+	position: absolute;
+	margin: -200px 0 0 -425px;
+}
+
+.bienvenue .welcome1 {
+	font-size: 200px;
+	font-family: gloss_and_bloomregular;
+	margin-top: -35px;
+  letter-spacing: 6px;
+}
+
+.bouton {
+	text-decoration: none;
+	position: absolute;
+	width: 600px;
+	height: 46px;
+	margin: -23px 0 0 -210px;
+	top: 75%;
+	left: 50%;
+
+}
+
+
+.bouton .btn {
+	font-size: 20px;
+	text-transform: uppercase;
+	border: 3px solid white;
+	border-radius: 12px;
+	color: #fff;
+	background-image: -webkit-linear-gradient(45deg, #fff 50%, transparent 50%);
+	background-image: linear-gradient(45deg, #fff 50%, transparent 50%);
+	background-position: 100%;
+	background-size: 400%;
+	-webkit-transition: background 100ms ease-in-out;
+	transition: background 300ms ease-in-out;
+}
+
+.bouton .btn:hover {
+  background-position: 0;
+	color: red;
+	border-color: white;
+}
+
+ a.first{
+	 width: 190.55px;
+	margin-right: 40px;
+}
+
+a.second{
+	width: 190.55px;
+}

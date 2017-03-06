@@ -12,5 +12,41 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
+
 //= require_tree .
+
+surexposition = {
+
+  moveToDecal:function(){
+    if(!this.photo.className.match("decal")){
+      this.photo.className += " decal";
+    }
+  },
+
+  moveToFixe:function(){
+    this.photo.className = this.photo.className.replace("decal", "");
+  },
+
+  initEvent:function(){
+    var self = this;
+    this.top.addEventListener("mousemove", function(){
+      self.moveToDecal();
+    }, true)
+    this.bottom.addEventListener("mousemove", function(){
+      self.moveToFixe();
+    }, true)
+  },
+
+  init:function(){
+    this.top = document.getElementById("top");
+    this.bottom = document.getElementById("bottom");
+    this.photo = document.getElementById("photomoved");
+    console.log(this.top, this.bottom);
+    this.initEvent();
+  }
+
+}
+
+window.onload=function(){
+  surexposition.init();
+}

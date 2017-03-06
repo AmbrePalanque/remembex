@@ -7,6 +7,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   > a {
+    border: 1px solid white;
     max-width: 270px;
     background: white;
     color: white;
@@ -14,6 +15,7 @@
     box-sizing: border-box;
     transition: 0.2s;
     margin: 0 30px;
+    margin-bottom: 50px;
     &:hover {
       transform: scale(1.05);
     }
@@ -21,11 +23,13 @@
       position: relative;
       display: flex;
       flex-direction: column;
+
       .overlay {
         position: absolute;
         width: 100%;
         height: 100%;
-        background: linear-gradient(transparentize(red, 1) 25%, transparentize(red, 0.5));
+        background: linear-gradient(transparentize(red, 1) 25%,
+         transparentize(red, 0.5));
         display: flex;
         flex-direction: column-reverse;
         div {
